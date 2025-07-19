@@ -1,7 +1,7 @@
 // Script for getting data from studentsFoodPlacesReviews.json and displaying it
 
 document.addEventListener("DOMContentLoaded", async function () {
-    const response = await fetch("../assets/js/studentsFoodPlacesReviews.json");
+    const response = await fetch("assets/js/studentsFoodPlacesReviews.json");
     const reviews = await response.json();
     const carouselContent = document.getElementById("carousel-content");
 

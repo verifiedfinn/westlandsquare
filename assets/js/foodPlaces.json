@@ -5,7 +5,7 @@
         "website": "https://www.tesco.ie/store-locator/dublin/152-160-pearse-street?srsltid=AfmBOoqtdNJ-njiqfhHnDbi7wv9Ej1bEWaWgGT0f82GRQ-oNajrZl27L",
         "description": "Has food and medicines.",
         "pricing": "Sandwich: €2.50, Bread: €2.20",
-        "image": "../assets/img/tesco.jpg"
+        "image": "assets/img/tesco.jpg"
     },
     {
         "name": "Subway",
@@ -13,7 +13,7 @@
         "website": "https://restaurants.subway.com/ireland/dublin/dublin/trinty-central-152-160-pearse-street",
         "description": "Expensive, but tasty.",
         "pricing": "Sub: €10.00, Drink: €2.50",
-        "image": "../assets/img/subway.jpg"
+        "image": "assets/img/subway.jpg"
     },
     {
         "name": "Honey Truffle",
@@ -21,7 +21,7 @@
         "website": "https://honeytruffle.ie/",
         "description": "Daytime cafè!",
         "pricing": "Coffee: €2.50, Pastry: €3.00",
-        "image": "../assets/img/honeyTruffle.jpg"
+        "image": "assets/img/honeyTruffle.jpg"
     },
     {
         "name": "Bitebox",
@@ -29,7 +29,7 @@
         "website": "http://www.bitebox.ie/",
         "description": "Burgers and Pizzas available.",
         "pricing": "Pizza: €13.99, Expresso: €2.20",
-        "image": "../assets/img/bitebox.jpg"
+        "image": "assets/img/bitebox.jpg"
     },
     {
         "name": "The Pig and Heifer",
@@ -37,6 +37,6 @@
         "website": "http://www.pigandheifer.ie/",
         "description": "Real 'pastrami on rye' available.",
         "pricing": "Sandwich (vegetarian too): €6.50",
-        "image": "../assets/img/pigAndHeifer.JPG"
+        "image": "assets/img/pigAndHeifer.JPG"
     }
 ]

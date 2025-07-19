@@ -1,6 +1,6 @@
 // Script for reviews
 
-fetch('../assets/js/reviews.json')
+fetch('assets/js/reviews.json')
     .then(response => response.json())
     .then(data => {
         let reviews = data;

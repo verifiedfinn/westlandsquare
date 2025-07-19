@@ -1,6 +1,6 @@
 // Script for fetching data from foodPlaces.json and displaying it
 
-fetch('../assets/js/foodPlaces.json')
+fetch('assets/js/foodPlaces.json')
     .then(response => response.json())
     .then(data => {
         let foodPlaces = data;

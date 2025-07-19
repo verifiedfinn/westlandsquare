@@ -1,0 +1,867 @@
+/* ========================= */
+/* Global Styles */
+/* ========================= */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-bottom: 30px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+/* ========================= */
+/* Navigation Bar */
+/* ========================= */
+.navbar {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #0569b9;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* ========================= */
+/* Footer */
+/* ========================= */
+footer {
+    font-size: 1rem;
+}
+
+.footer-logo {
+    height: 50px;
+}
+
+.footer-link {
+    color: #212529;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #0569b9;
+}
+
+.social-media a i {
+    color: #0569b9;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-media a:hover i {
+    color: #034e87 !important;
+}
+
+/* ========================= */
+/* Homepage Styling */
+/* ========================= */
+.about {
+    background-color: #F4F3F3;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px; /* Prevent elements from touching edges */
+}
+
+.text {
+    z-index: 2;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#explore-container {
+    z-index: 2;
+    width: 100%;
+    max-width: 900px; /* Limits width on large screens */
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+#homepage-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: rgba(5, 105, 185, 0.8);
+    padding: 10px 20px;
+    margin-top: -10rem; 
+}
+
+#homepage-description {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgba(5, 105, 185, 0.8); 
+    margin: 5px 0 0;
+    padding: 8px 10px;
+}
+
+#explore-container {
+    margin-top: 22rem;
+    position: relative;
+}
+
+.who .people img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;     
+    object-fit: cover;      
+    object-position: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.who .people img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.people img.adjust-center {
+    max-width: 150px;
+    height: 100%;
+    max-height: 150px;
+    border-radius: 50%;
+    object-fit: fill;
+    object-position: 50% 70%; 
+}
+
+.explore .card-link {
+    text-decoration: none !important; 
+}
+
+#explore-container .card {
+    cursor: pointer; 
+    display: flex;
+    text-decoration: none;
+    height: auto;      
+    width: 100%;        
+    max-width: 300px;  
+    background-color: #0569b9;  
+    color: #ffffff;             
+    border: 2px solid #0569b9;  
+    padding: 30px;     
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#explore-container .card:hover {
+    transform: scale(1.05);     
+    background-color: #ffffff;  
+    color: #0569b9;             
+    border: 2px solid #0569b9;
+}
+
+/* ========================= */
+/* Card Design */
+/* ========================= */
+.card {
+    height: 100%;
+    background: #0569b9;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* ========================= */
+/* Facilities Page Styling */
+/* ========================= */
+#floor-plans, #idm-classroom, #tech-provided, #kitchen {
+    background-color: #F4F3F3;
+}
+
+#restrooms h2 {
+    margin-bottom: 10px;
+}
+
+#floor-plans ul li i, #idm-classroom ul li i, #labs-and-tech ul li i, #restrooms ul li i, #kitchen ul li i {
+    margin-right: 10px;  
+    font-size: 1.2rem;    
+    color: white;       
+}
+
+#floor-plans ul.list-unstyled li {
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 5px; 
+}
+
+.third-floor-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.img-fluid {
+    max-width: 500px; 
+    height: auto; 
+}
+
+.floor-text {
+    font-size: 1.2rem; 
+}
+
+.idm-classroom-container, .kitchen-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 60px; 
+}
+
+#labs-and-tech .carousel-item img {
+    max-width: 600px;
+    height: auto;
+}
+
+.carousel {
+    border: none !important;
+}
+
+#labSlideshow,
+#labSlideshow .carousel-inner,
+#labSlideshow .carousel-item {
+    background: transparent !important;
+}
+
+.classroom-image, .kitchen-image {
+    max-width: 400px;
+    height: auto; 
+}
+
+.tech-item img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+#idm-classroom ul li i, #labs-and-tech ul li i, #kitchen ul li i {  
+    font-size: 10px;
+    color: black;       
+}
+
+#restrooms ul li i {  
+    font-size: 10px;     
+}
+
+/* ========================= */
+/* What's around Page Styling */
+/* ========================= */
+#food-places {
+    background-color: #F4F3F3;
+}
+
+#food-places .btn {
+    background-color: #3266ad;
+    color: white
+}
+
+.filter-btn {
+    border-radius: 55px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filter-btn:disabled {
+    background-color: #9fbab5;
+    cursor: not-allowed; 
+}
+
+.whatsAround .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.whatsAround .card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+.whatsAround .card-body h5 {
+    font-size: 1.2rem ;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 5px; 
+}
+
+.whatsAround .card-body p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 5px; 
+}
+
+.whatsAround .card-body .place-descr {
+    font-style: italic;
+}
+
+.whatsAround .card-body a {
+    font-size: 0.9rem;
+    color: white;
+}
+
+.whatsAround i {
+    margin-right: 10px;       
+}
+
+.whatsAround .card-body a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    max-width: 900; 
+    height: 480;
+}
+
+#students-reviews {
+    background-color: #F4F3F3;
+}
+
+.reviews-title {
+    margin-bottom: 20px;
+}
+
+.carousel-item {
+    text-align: center;
+    padding: 20px;
+    background: #F4F3F3;
+}
+
+.place-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.rating {
+    color: gold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.review {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.student-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+.student-status {
+    font-size: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(100%); 
+}
+
+.carousel-control-prev, .carousel-control-next {
+    color: black;
+    width: 2%;
+}
+
+#transportation h3 {
+    margin-bottom: 20px;
+}
+
+.pdf embed {
+    width: 80%;
+    max-width: 100%; 
+    height: 500px; 
+    border: none;
+}
+
+/* ========================= */
+/* Student board Page Styling */
+/* ========================= */
+.board {
+    padding-left: 5em; 
+    padding-right: 5em; 
+    background-color: #F4F3F3;
+}
+
+.chat {
+    min-height: 80vh;
+}
+
+#chatBox {
+    height: 60vh;
+    overflow-y: auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.textMessage {
+    background-color: lightgrey;
+    max-width: 70%;
+    margin-left: auto;
+}
+
+.input-group {
+    margin-top: 10px;
+}
+
+#messageInput {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#sendMessage {
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 5px;
+    color: white;
+    background-color: #3266ad;
+}
+
+#pinnedBox {
+    min-height: 60vh;
+    overflow-y: auto;
+    background-color: #F4F3F3;
+}
+
+.btn-bin, .unpinBtn, .pin-button, .remove-object, .add-object-btn, #postObject {
+    color: white;
+    background-color: #3266ad;
+}
+
+.pinned-message {
+    background-color: lightblue; 
+    color: black;
+}
+
+.form-container {
+    background-color: lightblue;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lostAndFound {
+    padding-left: 5em; 
+    padding-right: 5em; 
+}
+
+.lostAndFound h5 {
+    font-weight: bold;
+    color: black;
+}
+
+.lostAndFound p {
+    font-size: 1.2rem;
+}
+
+#lostFoundSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem; 
+}
+
+#addObjectSection {
+    color: black;
+    background-color: #F4F3F3;
+    display: none;
+}
+
+.object-card {
+    width: 100%; 
+    background-color: #F4F3F3;
+    word-break: break-word; /* Break long words onto the next line */
+}
+
+.reviews {
+    padding-left: 5em; 
+    padding-right: 5em;
+    background-color: #F4F3F3;
+}
+
+.reviews .card-title {
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+}
+
+#prev, #next{
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: #3266ad;
+}
+
+/* ========================= */
+/* Contact Page Styling */
+/* ========================= */
+#open-hour, #course-director, .list-group li {
+    background-color: #F4F3F3;
+}
+
+.calendar-frame iframe {
+    width: 100%;
+    height: 300px;
+}
+
+#find-us-here h2 {
+    margin-bottom: 40px;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+.person {
+    background: #0569b9;
+    padding: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.person:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.person img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+#course-director .underline a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding-bottom:2px;
+    background-image: linear-gradient(#000 0 0);
+    background-position: right -100% bottom 0;
+    background-size: 200% 2px;
+    background-repeat: no-repeat;
+}
+
+#course-director .underline a:hover {
+    background-position: left -100% bottom 0;
+    transition: background-position 0.5s;
+    cursor:pointer;
+}
+
+/* ========================= */
+/* Responsive Adjustments */
+/* ========================= */
+@media (max-width: 991px) {
+    #homepage-hero {
+        height: 140vh;  
+        min-height: 700px;
+    }
+    .bg-video {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    .text {
+        top: 30%; 
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    #homepage-title {
+        width: 90%;  
+        max-width: 300px;
+        font-size: 2rem;
+        margin: 1rem auto 2rem;
+    }
+    #homepage-description {
+        width: 90%;  
+        max-width: 300px;
+        font-size: 1rem;  
+        margin: 0 auto 3rem;  
+    }
+    #explore-container {
+        margin-top: 5rem; 
+    }
+    .row {
+        gap: 1.5rem; 
+    }
+    #explore-container .col-md-3 {
+        width: 100%;  
+        max-width: 160px;  
+        aspect-ratio: 1/1;  
+        margin: 5px auto;  
+    }
+    #explore-container .card {
+        width: 100%;  
+        height: 100%;  
+        padding: 15px;  
+        border-radius: 12px;  
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #explore-container .card a {
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 991px) {
+    .text {
+        top: 15%;
+    }
+    #explore-container {
+        margin-top: 7rem;
+    }
+    .row {
+        gap: 1rem;
+    }
+    #explore-container .col-md-3 {
+        width: 100%;  
+        max-width: 200px;  
+        margin: 5px auto;
+    }
+    #explore-container .card {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bg-video {
+        object-fit: cover;
+        height: 100%;
+    }
+    .text {
+        top: 20%; 
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    #homepage-title {
+        width: 90%;  
+        max-width: 300px;
+        font-size: 2rem; 
+        margin: 1rem auto 2rem;  
+    }
+    #homepage-description {
+        width: 90%;  
+        max-width: 300px;
+        font-size: 1rem;  
+        margin: 0 auto 3rem;  
+    }
+    #explore-container {
+        margin-top: 8rem;  
+    }
+    #explore-container .col-md-3 {
+        width: 100%;  
+        max-width: 140px;  
+        aspect-ratio: 1/1;  
+        margin: 5px auto;  
+    }
+}
+
+@media (max-width: 520px) {
+    #homepage-title {
+        font-size: 1.8rem; 
+    }
+    #homepage-description {
+        font-size: 1rem;
+    }
+    #explore-container .col-md-3 {
+        width: 100%;
+        max-width: 140px;  
+        margin: 5px auto;
+    }
+    #explore-container .card {
+        padding: 3px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-logo {
+        height: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .footer .row {
+        text-align: center;
+    }
+    .tech-icons {
+        flex-direction: column;
+    }
+    .idm-classroom-container, .kitchen-container {
+        gap: 20px; 
+        display: block;
+    }
+    .img-fluid {
+        width: 90%;
+    }
+    .classroom-image, .kitchen-image, #labs-and-tech .carousel-inner {
+        margin-top: 20px;
+    }
+    .board, .reviews, .lostAndFound {
+        padding-left: 2em; 
+        padding-right: 2em; 
+    }
+    #lostFoundSection {
+        grid-template-columns: 1fr; /* 1 card per row on small screens */
+    }
+}
+
+@media (width: 768px) {
+    .footer-logo {
+        height: 40px;
+        margin-right: 50px;
+    }
+    .footer .row {
+        text-align: left;
+    }
+}
+
+@media (max-width: 760px) {
+    .footer .social-media {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 520px) {
+    .filter-btn {
+        margin: 5px 0; 
+    }
+    .footer .social-media {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    .text h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    h2, h3 {
+        margin-bottom: 20px;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+    .map-container iframe, .map iframe {
+        height: 200px;
+        width: 250px;
+    }
+    .pdf embed, .pdf {
+        width: 100%;
+        height: 90%;
+        border: none;
+    }
+    .idm-classroom-container h3 {
+        margin-top: 20px; 
+    }
+}
+

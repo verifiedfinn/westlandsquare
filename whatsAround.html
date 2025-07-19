@@ -1,0 +1,158 @@
+<!-- What's around Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>What's around</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="../assets/style/main.css">        
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light py-4">
+                <div class="container">
+                    <a class="navbar-brand" href="homepage.html">
+                        <img class="rounded-circle" alt="Icon of the building" src="../assets/img/avatar1.jpg" width="60">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-header" 
+                            aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-header">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Facilities.html">Facilities</a></li>
+                            <li class="nav-item"><a class="nav-link fw-bold" href="whatsAround.html">What's around</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Board.html">Student Board</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>    
+        </header>    
+
+        <!-- Food places section -->
+        <section id="food-places" class="py-5 whatsAround">
+            <div class="container">
+                <h1>Food Places</h1>
+                <!-- Filters -->
+                <div class="d-md-flex justify-content-center my-4">
+                    <button class="btn mx-2 filter-btn" data-filter="all">All</button>
+                    <button class="btn mx-2 filter-btn" data-filter="grocery">Grocery</button>
+                    <button class="btn mx-2 filter-btn" data-filter="coffee">Coffee</button>
+                    <button class="btn mx-2 filter-btn" data-filter="food">Food</button>
+                </div>
+                <!-- Food places list -->
+                <div id="food-places-list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- Cards will be dynamically inserted here using JavaScript -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Find what's near us section -->
+        <section id="nearby-places" class="py-5 whatsAround">
+            <div class="container">
+                <h1>Find what's near us!</h1>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1Wff8x10L8YKk4yUFmJrV_f7VyIxoZBk&ehbc=2E312F&noprof=1"
+                        width="900"
+                        height="480"
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        title="Google Map showing the previous food places close to Westland Square building"
+                        aria-label="Interactive map showing the previous food places close to Westland Square building">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Students' reviews section -->
+        <section id="students-reviews" class="py-5 whatsAround">
+            <div class="container">
+                <h1 class="reviews-title">Students' recommendations</h1>
+                <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="carousel-content">
+                        <!-- Reviews will be dynamically inserted here using JavaScript-->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev" aria-label="Previous student review" tabindex="0">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next" aria-label="Next student review" tabindex="0">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </section>    
+        
+        <!-- Transportation section -->
+        <section id="transportation" class="py-5 whatsAround">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Transportation</h1>
+                        <p>Check out this PDF for the closest bus and DART stations! Make sure to buy the <a href="https://www.transportforireland.ie/fares/50-discount-for-young-adult-and-student-leap-card-holders-on-commercial-bus-operators/">TFI Leap card</a> for students' discounts.</p>
+                    </div>
+                    <div class="col-12 text-center pdf">
+                        <!-- Pdf from https://www.tcd.ie/healthytrinity/assets/documents/SmarterTravel/Pearse_Street_Spider_Poster_TFT.pdf, Accessed March 01, 2025 -->
+                        <embed src="../assets/PearseStreetSpiderPosterTFT.pdf" aria-label="View transportation PDF">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer section -->
+        <footer class="footer py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="../assets/img/trinityLogo.png" alt="Logo of Trinity College Dublin" class="footer-logo">
+                    </div>
+                    <div class="col-md-3">
+                        <p class="mb-2">8, Westland Square, Pearse St</p>
+                        <p class="mb-2">Trinity College Dublin</p>
+                        <p class="mb-4">Dublin, Ireland</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="mb-2"><a href="homepage.html" class="footer-link" aria-label="Go to Home page">Home</a></p>
+                        <p class="mb-2"><a href="Facilities.html" class="footer-link" aria-label="Go to Facilities page">Facilities</a></p>
+                        <p class="mb-2 fw-bold"><a href="whatsAround.html" class="footer-link" aria-label="See what's around">What's around</a></p>
+                        <p class="mb-2"><a href="Board.html" class="footer-link" aria-label="Go to Student Board page">Student Board</a></p>
+                        <p class="mb-2"><a href="contact.html" class="footer-link" aria-label="Go to Contact page">Contact</a></p>
+                    </div>
+                    <div class=col-md-3>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/trinitycollegedublin" class="btn btn-link" title="Facebook" aria-label="Go to Trinity College's Facebook page" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://x.com/tcddublin" class="btn btn-link" title="Twitter (X)" aria-label="Go to Trinity College's Twitter (X) page" target="_blank">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                            <a href="https://www.instagram.com/trinitycollegedublin/" class="btn btn-link" title="Instagram" aria-label="Go to Trinity College's Instagram page" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://ie.linkedin.com/school/trinity-college-dublin/" class="btn btn-link" title="Linkedin" aria-label="Go to Trinity College's Linkedin page" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/trinitycollegedublin" class="btn btn-link" title="YouTube" aria-label="Go to Trinity College's YouTube page" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 row text-center d-flex justify-content-center">
+                    <small>&copy; 2025 All rights reserved.</small>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/foodPlaces.js"></script>
+        <script src="../assets/js/studentsFoodPlacesReviews.js"></script>
+    </body>
+</html>

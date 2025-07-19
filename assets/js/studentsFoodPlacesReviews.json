@@ -1,0 +1,38 @@
+[
+    {
+        "place": "Tesco",
+        "rating": "★★★★★",
+        "review": "The best place to get a meal deal after class. I love their cheap food.",
+        "student": "Kiera O'Hara-Heinz",
+        "studentStatus": "current IDM student"
+    },
+    {
+        "place": "Subway",
+        "rating": "★★★★☆",
+        "review": "Great and tasty food! Cheaper option compared to other places around like Zombrero. Avoid around 1 though, it's VERY busy.",
+        "student": "Eve Brady",
+        "studentStatus": "current IDM student"
+    },
+    {
+        "place": "Honey Truffle",
+        "rating": "★★★★☆",
+        "review": "The coffee is really strong but tasty and the breakfast menu is pretty good. I would recommend using your TCard to get a discount. Plus, the seating area is a great place to study and the staff there is really nice!",
+        "student": "Robyn Quigley",
+        "studentStatus": "current IDM student"
+    },
+    {
+        "place": "Bitebox",
+        "rating": "★★★★★",
+        "review": "Their burger made me feel alive.",
+        "student": "Martin Nangole",
+        "studentStatus": "current IDM student"
+    },
+    {
+        "place": "The Pig and Heifer",
+        "rating": "★★★★☆",
+        "review": "Yummy sandwiches with a huge selection of fillings. The ques can be quite long at lunch time, but they move quickly.",
+        "student": "Nithya Lokuge",
+        "studentStatus": "current IDM student"
+    }
+]
+

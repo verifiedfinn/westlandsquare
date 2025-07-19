@@ -1,0 +1,170 @@
+<!-- Student's board Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Board Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="../assets/style/main.css">
+        <script src="https://kit.fontawesome.com/ce1662cecb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light py-4">
+                <div class="container">
+                    <a class="navbar-brand" href="homepage.html">
+                        <img class="rounded-circle" alt="Icon of the building" src="../assets/img/avatar1.jpg" width="60">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-header" 
+                            aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-header">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Facilities.html">Facilities</a></li>
+                            <li class="nav-item"><a class="nav-link" href="whatsAround.html">What's around</a></li>
+                            <li class="nav-item"><a class="nav-link fw-bold" href="Board.html">Student Board</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>    
+        </header>
+
+        <!-- Board section -->
+        <div class="container-fluid board py-5">
+            <h1>Board</h1>
+            <!-- Chat and pinned messages -->
+            <div class="row bg-white p-3 rounded shadow chat">
+                <!-- Chat section -->
+                <div class="col-12 col-md-8 p-2">
+                    <h2 class="text-center fw-bold">Chat</h2>
+                    <div id="chatBox" class="p-3">
+                        <!-- Messages will be added dynamically -->
+                    </div>
+                    <!-- Input box -->
+                    <div class="mt-3">
+                        <div class="input-group">
+                            <input type="text" aria-label="Type a message..." id="messageInput" class="form-control" placeholder="Type a message...">
+                            <button class="btn" id="sendMessage">Send</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pinned messages section -->
+                <div class="col-12 col-md-4 p-2">
+                    <h2 class="text-center fw-bold">Pinned</h2>
+                    <div id="pinnedBox" class="p-3 rounded">
+                        <!-- Pinned messages will be added here dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lost and Found section -->
+        <div class="container-fluid py-5 lostAndFound">
+            <!-- Lost and Found section -->
+            <div class="row">
+                <div class="col-12 p-3">
+                    <h1>Lost and Found</h1>
+                    <p>Have you lost anything in the building? Click the button below and let everyone know!</p>
+                </div>
+            </div>
+            <div id="lostFoundSection" class="mt-4">
+                <!-- New lost objects will be added here dynamically -->
+            </div>
+            <!-- Add an Object Button -->
+            <div class="d-flex justify-content-start align-items-center mt-5">
+                <button class="btn btn-secondary add-object-btn">Add an object</button>
+            </div>
+            <div id="addObjectSection" class="form-container mt-4 p-3 rounded shadow">
+                <h4 class="fw-bold">Add a Lost Object</h4>
+                <div class="mb-3">
+                    <label for="objectName" class="form-label fw-bold">Object name</label>
+                    <input type="text" id="objectName" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="objectDescription" class="form-label fw-bold">Description</label>
+                    <textarea id="objectDescription" class="form-control" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="objectImage" class="form-label fw-bold">Upload image</label>
+                    <input type="file" id="objectImage" class="form-control" accept="image/*">
+                </div>
+                <button class="btn" id="postObject">Post</button>
+            </div>
+        </div>
+
+        <!-- Reviews section -->
+        <div class="container-fluid py-5 reviews">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <h1>Reviews of students from 2024/2025</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div id="reviews-list" class="row">
+                    <!-- Reviews will be displayed here dynamically -->
+                </div>
+                <div class="navigation-buttons">
+                    <button id="prev" class="btn reviews-btn">Previous</button>
+                    <button id="next" class="btn reviews-btn">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer class="footer py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="../assets/img/trinityLogo.png" alt="Logo of Trinity College Dublin" class="footer-logo">
+                    </div>
+                    <div class="col-md-3">
+                        <p class="mb-2">8, Westland Square, Pearse St</p>
+                        <p class="mb-2">Trinity College Dublin</p>
+                        <p class="mb-4">Dublin, Ireland</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="mb-2"><a href="homepage.html" class="footer-link" aria-label="Go to Home page">Home</a></p>
+                        <p class="mb-2"><a href="Facilities.html" class="footer-link" aria-label="Go to Facilities page">Facilities</a></p>
+                        <p class="mb-2"><a href="whatsAround.html" class="footer-link" aria-label="See what's around">What's around</a></p>
+                        <p class="mb-2 fw-bold"><a href="Board.html" class="footer-link" aria-label="Go to Student Board page">Student Board</a></p>
+                        <p class="mb-2"><a href="contact.html" class="footer-link" aria-label="Go to Contact page">Contact</a></p>
+                    </div>
+                    <div class=col-md-3>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/trinitycollegedublin" class="btn btn-link" title="Facebook" aria-label="Go to Trinity College's Facebook page" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://x.com/tcddublin" class="btn btn-link" title="Twitter (X)" aria-label="Go to Trinity College's Twitter (X) page" target="_blank">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                            <a href="https://www.instagram.com/trinitycollegedublin/" class="btn btn-link" title="Instagram" aria-label="Go to Trinity College's Instagram page" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://ie.linkedin.com/school/trinity-college-dublin/" class="btn btn-link" title="Linkedin" aria-label="Go to Trinity College's Linkedin page" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/trinitycollegedublin" class="btn btn-link" title="YouTube" aria-label="Go to Trinity College's YouTube page" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 row text-center d-flex justify-content-center">
+                    <small>&copy; 2025 All rights reserved.</small>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/chatbox.js"></script>
+        <script src="../assets/js/lostAndFound.js"></script>
+        <script src="../assets/js/reviews.js"></script>
+    </body>   
+</html>
